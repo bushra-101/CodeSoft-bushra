@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#display {
+  background: #222;
+  color: #fff;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#input {
+  font-size: 1.5rem;
+  color: #bbb;
+}
+
+#output {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #ccc;
+}
+
+button {
+  background: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ddd;
+}
+#clear {
+  grid-column: span 4; /* Extend it across all columns */
+  text-align: center;
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+
+button:nth-child(16) {
+  background: #4caf50;
+  color: white;
+}
+
+/* look for more css ideas*/
