@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="bushra.css">
+  
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="section home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I am Bushra Ansari, a passionate Web Designer.</p>
+    <a href="#about" class="btn">Get to know me!</a>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Bushra Ansari, a passionate web developer with a knack for creating dynamic and responsive websites. I specialize in front-end development and have experience with various web technologies.</p>
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vue.js</li>
+        <li>Node.js, Express</li>
+        <li>Responsive Design</li>
+        <li>Version Control (Git)</li>
+    </ul>
+    <h2>Background</h2>
+    <p>I have a background in computer science and have worked on numerous projects that showcase my skills in web development. I am always eager to learn new technologies and improve my craft.</p>
+</section>
+
+  <section id="projects" class="section projects">
+    <h2>My Projects</h2><br>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="pro1.png" alt="Project 1" class="project-image">
+        <h3>@DotCom</h3>
+        <p>An ecommerce platform which connects you to different ranges of brands and communities.</p>
+      </div>
+      <div class="project-card">
+        <img src="pro2.png" alt="Project 2" class="project-image">
+        <h3>BizLink</h3>
+        <p>This app helps the business and student to bridge the communication, expertise gap. it allows students and companies to create their own accounts and showcase their achievements and brand themselves to the market.</p>
+      </div>
+      <div class="project-card">
+        <img src="pro3.png" alt="Project 3" class="project-image">
+        <h3>PONG GAME</h3>
+        <p>A classic table 2D pong game which allows to intereact and play till one player scores more. Intereactive designing is added in this python project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <button id="contactButton" class="contact-button">Contact Me</button>
+    <div id="contactInfo" class="contact-info" style="display: none;">
+      <form action="mailto:bushra.ansari.it02@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <button type="submit">Send</button>
+      </form>
+      </div></section>
+
+
+  <section id="contact" class="section contact">
+    <div class="block">
+      <h4>Follow my journey!</h4>
+      <div class="social-links">
+       
+        <a href="https://www.linkedin.com/in/bushra-ansari-81425b344/" target="_blank" class="social-link">
+          <img src="linkedin.jpg" alt="LinkedIn" class="social-icon">
+        </a>
+       
+        <a href="https://github.com/bushra-101" target="_blank" class="social-link">
+          <img src="git.jpg" alt="GitHub" class="social-icon">
+        </a>
+
+        <a href="mailto:bushra.ansari.it02@gmail.com" target="_blank" class="social-link">
+          <img src="gmail.jpg" alt="Gmail" class="social-icon"><br>
+          
+        </a>
+       
+      </div>    
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <p>© 2025 Bushra Ansari. All Rights Reserved.</p>
+  </footer>
+
+</body>
+<script>
+  document.getElementById('contactButton').addEventListener('click', function() {
+    var contactInfo = document.getElementById('contactInfo');
+    if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+      contactInfo.style.display = 'block';
+    } else {
+      contactInfo.style.display = 'none';
+    }
+  });
+</script>
+</html>
